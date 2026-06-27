@@ -42,6 +42,13 @@
       text-decoration: none;
     }
 
+	.section-subtitle {
+  	margin: -10px 0 20px;
+  	font-size: 0.78rem;
+  	font-weight: 400;
+  	color: #9ca0a8;
+	}
+	  
     img {
       max-width: 100%;
       display: block;
@@ -182,11 +189,9 @@
     }
 
     .feature-image {
-      width: 100%;
-      height: auto;
-      aspect-ratio: 670 / 540;
-      object-fit: cover;
-    }
+  width: 100%;
+  height: auto;
+	}
 
     .feature-meta {
       display: grid;
@@ -226,6 +231,26 @@
       gap: 14px;
       margin-top: 12px;
     }
+
+	  .contact {
+  margin-top: 24px;
+  font-size: 1.02rem;
+}
+
+.contact span {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--soft);
+  font-weight: 700;
+}
+
+.contact a {
+  font-weight: 600;
+  color: var(--text);
+}
 
     .pub-item {
       margin: 0;
@@ -280,10 +305,12 @@
     <main id="etusivu">
       <section class="hero">
         
-        <p class="hero-text">
-          Yhteydenotot:
-		  etunimi.sukunimi@gmail.com
-        </p>
+        <p class="contact">
+  <span>Yhteydenotot</span><br>
+  <a href="mailto:etunimi.sukunimi@gmail.com">
+    etunimi.sukunimi@gmail.com
+  </a>
+</p>
 
 
       <section class="section" aria-labelledby="tietokirjat">
@@ -304,6 +331,10 @@
 
       <section class="section" id="julkaisut" aria-labelledby="uusimmat-julkaisut">
         <h2 id="uusimmat-julkaisut" class="section-title">Uusimmat omat tutkimukset</h2>
+		  
+		  <p class="section-subtitle">
+  Artikkeleita, joissa ensimmäisenä kirjoittajana
+</p>
 
         <div class="publications">
           <p class="pub-item">– Protective factors associated with perceived risk of exclusion from education and work among vocational students. <em>Journal of Adolescence 2026.</em></p>
